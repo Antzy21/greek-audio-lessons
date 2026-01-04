@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, onMounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
   src: { type: String, required: true },
@@ -7,6 +7,7 @@ const props = defineProps({
 })
 
 const audio = ref(null)
+const isPlaying = ref(false)
 
 function play() {
     audio.value?.play().catch(() => {})
@@ -31,12 +32,35 @@ watch(() => props.src, (newSrc) => {
   }
 })
 
+onMounted(() => {
+  if (!audio.value) return
+  // keep play/pause/ended in sync with state
+  const onPlay = () => { isPlaying.value = true }
+  const onPause = () => { isPlaying.value = false }
+  const onEnded = () => { isPlaying.value = false }
+  audio.value.addEventListener('play', onPlay)
+  audio.value.addEventListener('pause', onPause)
+  audio.value.addEventListener('ended', onEnded)
+  // store listeners for cleanup
+  audio._listeners = { onPlay, onPause, onEnded }
+})
+
+onUnmounted(() => {
+  if (!audio.value || !audio._listeners) return
+  const { onPlay, onPause, onEnded } = audio._listeners
+  audio.value.removeEventListener('play', onPlay)
+  audio.value.removeEventListener('pause', onPause)
+  audio.value.removeEventListener('ended', onEnded)
+  delete audio._listeners
+})
+
 </script>
 
 <template>
-    <div>
-        Audio {{ number }}
-        <button @click="togglePlay">Play/Pause</button>
-        <audio ref="audio" :src="src"></audio>
-    </div>
+  <div class="audio-player">
+    <button class="play-btn" :class="{ playing: isPlaying }" @click="togglePlay" :aria-pressed="isPlaying" aria-label="Play or pause audio">
+      <span class="btn-text">Audio {{ number }}</span>
+    </button>
+    <audio ref="audio" :src="src"></audio>
+  </div>
 </template>
