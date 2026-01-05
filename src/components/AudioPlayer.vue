@@ -3,7 +3,7 @@ import { ref, watch, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
   src: { type: String, required: true },
-  number: { type: Number, default: 1 }
+  buttonText: { type: String, default: "" }
 })
 
 const audio = ref(null)
@@ -57,10 +57,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="audio-player">
-    <button class="play-btn" :class="{ playing: isPlaying }" @click="togglePlay" :aria-pressed="isPlaying" aria-label="Play or pause audio">
-      <span class="btn-text">Audio {{ number }}</span>
-    </button>
-    <audio ref="audio" :src="src"></audio>
-  </div>
+  <button class="play-btn" :class="{ playing: isPlaying }" @click="togglePlay" :aria-pressed="isPlaying" aria-label="Play or pause audio">
+    {{ buttonText }}
+  </button>
+  <audio ref="audio" :src="src"></audio>
 </template>
