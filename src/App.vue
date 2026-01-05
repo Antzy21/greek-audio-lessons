@@ -21,6 +21,19 @@ import AudioPlayer from './components/AudioPlayer.vue'
     <span>Από πού είστε; <AudioPlayer src="../assets/06-Lesson1-5.mp3" buttonText="6" /></span>
     <span>Από πού είσαι; <AudioPlayer src="../assets/07-Lesson1-6.mp3" buttonText="7" /></span>
   </div>
+
+  <h2>Lesson 2</h2>
+
+  <div>
+    <span>Καλημέρα σας. Τι κάνετε; <AudioPlayer src="../assets/08-Lesson2-1.mp3" buttonText="8" /></span>
+    <span>Γειά σου. Τι κάνεις; <AudioPlayer src="../assets/09-Lesson2-2.mp3" buttonText="9" /></span>
+    <span>Η κυρία Γιαρδέλ. Ο κύριος Μαρατός. <AudioPlayer src="../assets/10-Lesson2-3.mp3" buttonText="10" /></span>
+    <span>Ο Στέφαν. Η Μόνικα. <AudioPlayer src="../assets/11-Lesson2-4.mp3" buttonText="11" /></span>
+  </div>
+
+  <div>
+    <span>Exercise 6 <AudioPlayer src="../assets/12-Lesson2-5.mp3" buttonText="12" /></span>
+  </div>
 </template>
 
 <style scoped></style>
