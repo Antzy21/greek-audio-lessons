@@ -34,6 +34,18 @@ import AudioPlayer from './components/AudioPlayer.vue'
   <div>
     <span>Exercise 6 <AudioPlayer src="../assets/12-Lesson2-5.mp3" buttonText="12" /></span>
   </div>
+
+  <h2>Lesson 3</h2>
+
+  <div>
+    <span>Η Μόνικ δουλεύει στην Ελλάδα <AudioPlayer src="../assets/13-Lesson3-1.mp3" buttonText="13" /></span>
+    <span>Είμαι απ' τη Ρωσία, απ' τη Μόσχα <AudioPlayer src="../assets/14-Lesson3-2.mp3" buttonText="14" /></span>
+    <span>Πού μένετε; <AudioPlayer src="../assets/15-Lesson3-3.mp3" buttonText="15" /></span>
+  </div>
+
+  <div>
+    <span>Exercise 12 <AudioPlayer src="../assets/16-Lesson3-4.mp3" buttonText="16" /></span>
+  </div>
 </template>
 
 <style scoped></style>
