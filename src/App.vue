@@ -70,6 +70,12 @@ import AudioPlayer from './components/AudioPlayer.vue'
     <span>Exercise 9 <AudioPlayer src="../assets/23-Lesson5-2.mp3" buttonText="23" /></span>
   </div>
 
+  <h2>Lesson 6</h2>
+
+  <div>
+    <span>Από την Ισπανία στην Ελλάδα <AudioPlayer src="../assets/24-Lesson6.mp3" buttonText="24" /></span>
+  </div>
+
   <footer>
     <hr/>
     Audio belongs to <a href="https://deltos.gr" target="_blank">deltos.gr</a> <br/>
