@@ -1,5 +1,6 @@
 :root {
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  --very-light-blue: #e2eeff;
   --blue: #2563eb;
   --deep-blue: #1949cc;
 }
@@ -9,7 +10,7 @@ body {
   font-size: 16px;
   color: #202d4b;
   user-select: none;
-  background-color: rgb(214, 232, 255);
+  background-color: var(--very-light-blue);
 }
 
 button {
