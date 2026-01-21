@@ -3,14 +3,18 @@
   --very-light-blue: #e2eeff;
   --blue: #2563eb;
   --deep-blue: #1949cc;
+  --black-blue: #202d4b;
 }
 
 body {
   font-family: var(--font-sans);
   font-size: 16px;
-  color: #202d4b;
+  max-width: 840px;
+  color: var(--black-blue);
   user-select: none;
   background-color: var(--very-light-blue);
+  line-height: 2rem;
+  margin-right: 0;
 }
 
 button {
@@ -20,7 +24,6 @@ button {
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem;
-  margin: 0.5rem;
   cursor: pointer;
   gap: 0.5rem;
 }
@@ -67,10 +70,4 @@ footer a {
 footer a:hover {
   color: var(--deep-blue);
   text-decoration: none;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 840px;
-  padding: 0 1rem;
 }
