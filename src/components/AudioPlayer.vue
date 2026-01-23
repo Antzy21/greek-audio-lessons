@@ -57,7 +57,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <button class="play-btn" :class="{ playing: isPlaying }" @click="togglePlay" :aria-pressed="isPlaying" aria-label="Play or pause audio">
+  <button class="audio-btn" :class="{ playing: isPlaying }" @click="togglePlay" :aria-pressed="isPlaying" aria-label="Play or pause audio">
     <i class="fa-sharp fa-solid fa-headphones"></i>{{ buttonText }}
   </button>
   <audio ref="audio" :src="src"></audio>

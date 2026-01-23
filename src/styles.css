@@ -14,10 +14,10 @@ body {
   user-select: none;
   background-color: var(--very-light-blue);
   line-height: 2rem;
-  margin-right: 0;
+  margin: 0 auto;
 }
 
-button {
+.audio-btn {
   background-color: var(--blue);
   color: #ffffff;
   font-weight: 700;
@@ -28,27 +28,24 @@ button {
   gap: 0.5rem;
 }
 
-button:hover {
+.audio-btn:hover {
   background-color: var(--deep-blue);
 }
 
-button.playing {
+.audio-btn.playing {
   background-color: var(--deep-blue);
 }
 
-h2 {
-  margin-top: 2rem;
+.lesson {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
 }
 
-span {
+.lesson-title {
+  flex: 0 0 auto;
   font-weight: 1000;
-  margin-right: 1rem;
   margin-bottom: 1rem;
-  display: inline-block;
-}
-
-hr {
-  color: #ddd;
 }
 
 .fa-headphones {
