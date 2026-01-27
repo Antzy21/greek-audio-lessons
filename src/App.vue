@@ -118,6 +118,14 @@ import AudioPlayer from './components/AudioPlayer.vue'
     <span class="lesson-title">Τι ώρα είναι; <AudioPlayer src="../assets/34-Lesson10-1.mp3" buttonText="34" /></span>
     <span class="lesson-title">Πηγαίνει πάντα με το μετρό; <AudioPlayer src="../assets/35-Lesson10-2.mp3" buttonText="35" /></span>
   </div>
+  
+  <h2>Lesson 11</h2>
+
+  <div class="lesson">
+    <span class="lesson-title">Υπάρχει κανένα φαρμακείο εδώ κοντά; <AudioPlayer src="../assets/36-Lesson11-1.mp3" buttonText="36" /></span>
+    <span class="lesson-title">Είναι ο τρίτος δρόμος δεξιά; <AudioPlayer src="../assets/37-Lesson11-2.mp3" buttonText="37" /></span>
+    <span class="lesson-title">Έναν ελληνικό μέτριο, παρακαλώ <AudioPlayer src="../assets/38-Lesson11-3.mp3" buttonText="38" /></span>
+  </div>
 
   <footer>
     <hr/>
