@@ -97,6 +97,21 @@ import AudioPlayer from './components/AudioPlayer.vue'
     <span class="lesson-title">Exercise 14 <AudioPlayer src="../assets/29-Lesson8-3.mp3" buttonText="29" /></span>
   </div>
 
+  <h2>Lesson 9</h2>
+
+  <div class="lesson">
+    <span class="lesson-title">Έτσι είναι η ζωή! <AudioPlayer src="../assets/30-Lesson9-1.mp3" buttonText="30" /></span>
+    <span class="lesson-title">Ξέρεις την καινούργια μαθήτρια; <AudioPlayer src="../assets/31-Lesson9-2.mp3" buttonText="31" /></span>
+  </div>
+
+  <div class="lesson">
+    <span class="lesson-title">Exercise 11 <AudioPlayer src="../assets/32-Lesson9-3.mp3" buttonText="32" /></span>
+  </div>
+  
+  <div class="lesson">
+    <span class="lesson-title">Πάω στο γραφείο <AudioPlayer src="../assets/33-Lesson9-4.mp3" buttonText="33" /></span>
+  </div>
+
   <footer>
     <hr/>
     Audio belongs to <a href="https://deltos.gr" target="_blank">deltos.gr</a> <br/>
