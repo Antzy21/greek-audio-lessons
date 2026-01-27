@@ -127,6 +127,16 @@ import AudioPlayer from './components/AudioPlayer.vue'
     <span class="lesson-title">Έναν ελληνικό μέτριο, παρακαλώ <AudioPlayer src="../assets/38-Lesson11-3.mp3" buttonText="38" /></span>
   </div>
 
+  <h2>Lesson 12</h2>
+
+  <div class="lesson">
+    <span class="lesson-title">Η οικογένεια Σαρρηγιάννη <AudioPlayer src="../assets/39-Lesson12-1.mp3" buttonText="39" /></span>
+  </div>
+  
+  <div class="lesson">
+    <span class="lesson-title">Exercise 18 <AudioPlayer src="../assets/40-Lesson12-2.mp3" buttonText="40" /></span>
+  </div>
+
   <footer>
     <hr/>
     Audio belongs to <a href="https://deltos.gr" target="_blank">deltos.gr</a> <br/>
