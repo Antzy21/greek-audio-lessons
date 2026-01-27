@@ -107,9 +107,16 @@ import AudioPlayer from './components/AudioPlayer.vue'
   <div class="lesson">
     <span class="lesson-title">Exercise 11 <AudioPlayer src="../assets/32-Lesson9-3.mp3" buttonText="32" /></span>
   </div>
-  
+
   <div class="lesson">
     <span class="lesson-title">Πάω στο γραφείο <AudioPlayer src="../assets/33-Lesson9-4.mp3" buttonText="33" /></span>
+  </div>
+
+  <h2>Lesson 10</h2>
+
+  <div class="lesson">
+    <span class="lesson-title">Τι ώρα είναι; <AudioPlayer src="../assets/34-Lesson10-1.mp3" buttonText="34" /></span>
+    <span class="lesson-title">Πηγαίνει πάντα με το μετρό; <AudioPlayer src="../assets/35-Lesson10-2.mp3" buttonText="35" /></span>
   </div>
 
   <footer>
