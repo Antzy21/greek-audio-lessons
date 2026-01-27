@@ -1,4 +1,5 @@
 <script setup>
+import { h } from 'vue';
 import AudioPlayer from './components/AudioPlayer.vue'
 </script>
 
@@ -136,6 +137,15 @@ import AudioPlayer from './components/AudioPlayer.vue'
   <div class="lesson">
     <span class="lesson-title">Exercise 18 <AudioPlayer src="../assets/40-Lesson12-2.mp3" buttonText="40" /></span>
   </div>
+
+  <h2>Lesson 13</h2>
+
+    <div class="lesson">
+      <span class="lesson-title">Οι φράουλες είναι ακριβές <AudioPlayer src="../assets/41-Lesson13-1.mp3" buttonText="41" /></span>
+      <span class="lesson-title">Στο σούπερμαρκετ <AudioPlayer src="../assets/42-Lesson13-2.mp3" buttonText="42" /></span>
+    </div>
+
+  
 
   <footer>
     <hr/>
